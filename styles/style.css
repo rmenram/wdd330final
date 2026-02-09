@@ -1,0 +1,200 @@
+/*************** BODY ****************/
+body {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.master-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #121212;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.text-secondary {
+    color: #A0A0A0;
+}
+
+.accent {
+    color: #00E5FF;
+}
+
+a {
+    color: #00E5FF;
+    text-decoration: none;
+}
+
+button {
+    background-color: #00E5FF;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/*************** HERO ****************/
+.hero {
+    /* text-align: center; */
+    background-image: url('/images/movie-large.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+
+.purpose {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 1rem;
+}
+
+/*************** LOGO ****************/
+.logo {
+    display: flex;
+    align-items: center;
+    color: #00E5FF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content:space-evenly;
+    border-bottom: solid 1px #1E1E1E;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+/*************** HAMBURGER ****************/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #00E5FF;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/************** NAVIGATION ***************/
+.navbar {
+    display: none;
+}
+
+.navbar.show {
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    display: block;
+    padding: .5rem;
+    border-bottom: solid 1px #1E1E1E;
+}
+
+.navbar a:hover {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+/*************** FOOTER ****************/
+footer {
+    /* border-top: solid 1px #1E1E1E; */
+    padding: 1rem;
+    color: #A0A0A0;
+    font-size: small;
+    text-align: left;
+}
+
+.social {
+    border-top: solid 1px #1E1E1E;
+    padding: 10px;
+    text-align: center;
+}
+
+.dates {
+    border-top: solid 1px #1E1E1E;
+}
+
+/*************** LARGE ****************/
+@media only screen and (min-width: 38rem) {
+    /*************** LOGO ****************/
+        .logo {
+            justify-content: flex-start;
+        }
+    /*************** HAMBURGER ****************/
+    .hamburger {
+        display: none;
+    }
+    /************** NAVIGATION ***************/
+    .navbar {
+        background-color: #1E1E1E;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* padding: 1rem 2rem; */
+        padding: 0 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar a {
+        display: inline;
+        padding: 0;
+        border-bottom: unset;
+    }
+
+    .navbar a:hover {
+        background-color: unset;
+        color: initial;
+    }
+
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        /* color: #A0A0A0; */
+        color:#FFFFFF;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #00E5FF;
+    }
+}
