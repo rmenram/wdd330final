@@ -51,7 +51,7 @@ button {
 /*************** HERO ****************/
 .hero {
     /* text-align: center; */
-    background-image: url('/images/movie-large.webp');
+    background-image: url('../images/movie-large.webp');
     background-size: cover;
     background-position: center;
     padding: 1rem;
