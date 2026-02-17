@@ -4,7 +4,7 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
     const query = document.getElementById('searchInput').value;
     resultsArea.innerHTML = 'Loading...';
     try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${OMDb_API}&s=${query}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${OMDb_API}&s=${query}`);
         if (!response.ok) throw new Error("Failed to load search results");
         const data = await response.json();
         console.log(data.Search);

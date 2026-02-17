@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to perform the search
 async function searchByImdbId(imdbId) {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${OMDb_API}&i=${imdbId}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${OMDb_API}&i=${imdbId}`);
         const data = await response.json(); 
         console.log(data);
         if (data.Response === "True") {
