@@ -33,12 +33,15 @@
             <h1>Movie Search...</h1>
             <p>[ 1 ] Enter a movie title below and click the Search button</p>
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search movies...">
+                <input type="text" id="searchInput" required placeholder="Search movies...">
                 <button id="searchBtn">Search</button>
             </div>
             <p>[ 2 ] From the results click a movie to see more details and to find streaming options</p>
             <h2>Results...</h2>
             <div id="results" class="card-container">Awaiting search...</div>
+            <div class="toTop">
+                <button id="scrollToTopBtn">Scroll to Top</button>
+            </div>
         </main>
         <footer>
             <div class="social">
@@ -55,6 +58,8 @@
             <!-- © 2026 Stream that Flick -->
         </footer>
         <script src="scripts/search.js"></script>
+        <script src="scripts/sticky.js"></script>
+        <script src="scripts/scroll.js"></script>
         <script src="scripts/navigation.js" defer></script>
     </div>
 </body>

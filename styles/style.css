@@ -126,6 +126,7 @@ button {
   100% { transform: rotate(0deg); }
 }
 
+/*************** EVENTS ****************/
 /*************** HAMBURGER ****************/
 .hamburger {
     background: none;
@@ -168,6 +169,21 @@ button {
 .navbar a:hover {
     background-color: #1E1E1E;
     color: #FFFFFF;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    z-index: 1000;
+}
+
+/*************** SCROLL ****************/
+.toTop {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
 }
 
 /*************** FOOTER ****************/

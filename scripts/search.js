@@ -1,6 +1,17 @@
 const OMDb_API = 'c7cc3081';
 const resultsArea = document.getElementById('results');
+
+document.getElementById('searchInput').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    performSearch()
+  }
+});
+
 document.getElementById('searchBtn').addEventListener('click', async () => {
+    performSearch()
+});
+
+async function performSearch() {
     const query = document.getElementById('searchInput').value;
     resultsArea.innerHTML = 'Loading...';
     try {
@@ -17,7 +28,7 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
     } catch (error) {
         console.error("Search Error:", error);
     }
-});
+}
 
 function buildCards(data) {
     data.Search.forEach(movie => {
